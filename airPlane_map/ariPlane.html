@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>机场</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/echarts.min.js"></script>
+</head>
+<body>
+<div id="airPlaneMap">
+</div>
+<div class="airport_detail">
+  <div style="display: block" class="airport_mess" id="airport_main">
+    <img src="img/zhjc.jpg" alt="">
+    <p class="airport_right">珠海机场按照ICAO
+      4E级标准规划设计和建设，1995年6月建成通航，首期建成长4000米跑道和滑行道各一条，可满足B747-400等大型客，货机起降。停机坪面积27.7万平方米，近机位（廊桥位）17个，远机位6个。候机楼面积9.16万平方米。<br>
+      年保障能力为：飞机起降10万架次，旅客吞吐量1100万人次，货邮吞吐量60万吨，高峰小时起降23架次、旅客吞吐量6000人次。</p>
+    <p class="image"><img src="img/total.jpg" alt=""></p>
+    <div class="airport_apply">
+      <p class="title">
+        <img src="img/icon.png" alt="">
+        <span>办理乘机手续</span>
+      </p>
+      <div class="airport_subtitle">
+        <p class="subtitle">▶办理乘机手续的时间</p>
+        <p class="detail">200座以上的飞机提前120分钟；90-200座的提前90分钟; 90座以下的提前60分钟。<br>
+          客票上列明的离站时间前40分钟停止办理乘机手续，航班起 飞前15分钟停止登机。</p>
+        <p class="subtitle">▶市内值机</p>
+        <p>市内值机可以提前12小时或以上，在城市候机楼办理乘机手续。 （春秋航除外）</p>
+      </div>
+      <img src="img/kongjie.jpg" alt="">
+    </div>
+<!--    <p class="airport_phone">-->
+<!--      <img src="img/phone.png" alt="">-->
+<!--    </p>-->
+
+  </div>
+  <div style="display: none" class="airport_mess" id="airport_main2">
+    <table border="0" cellspacing="0">
+      <thead>
+      <tr>
+        <th>航班号</th>
+        <th>目的地</th>
+        <th>航空公司</th>
+        <th>计划起飞</th>
+        <th>现况</th>
+      </tr>
+      </thead>
+      <tbody class="airport_time">
+      </tbody>
+    </table>
+  </div>
+</div>
+<script type="text/javascript" src="js/list.js"></script>
+<script type="text/javascript" src="js/airPlane.js"></script>
+</body>
+</html>

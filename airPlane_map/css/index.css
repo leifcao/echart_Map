@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: #4b4b4b;
+    letter-spacing: 2px;
+    font-family: "Microsoft Yahei",arial,"\5b8b\4f53";
+}
+
+#airPlaneMap {
+    width: 46%;
+    height: 99%;
+}
+
+.airport_detail {
+    padding:60px 50px 0px 50px;
+    width: calc(54% - 100px);
+    height: calc(100% - 60px);
+}
+
+.airport_mess {
+    width: 100%;
+    height: 100%;
+    /*background: white;*/
+}
+
+.airport_mess > img {
+    float: left;
+    width: 150px;
+}
+
+.airport_mess .airport_right {
+    float: left;
+    margin-left: 25px;
+    width: calc(100% - 175px);
+}
+
+.airport_mess .image > img {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+
+.airport_mess .airport_apply {
+}
+
+.airport_mess .airport_apply p.title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.airport_mess .airport_apply p.title > img {
+    width: 50px;
+    height: 50px;
+}
+
+.airport_mess .airport_apply p.title > span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.airport_mess .airport_apply .airport_subtitle {
+    width: 55%;
+    float: left;
+}
+
+.airport_mess .airport_apply .airport_subtitle p.subtitle {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.airport_mess .airport_apply .airport_subtitle p.detail {
+    font-size: 14px;
+    line-height: 2;
+    color: #4b4b4b;
+}
+
+.airport_mess .airport_apply > img {
+    width: calc(45% - 10px);
+    margin-left: 10px;
+    margin-top: 30px;
+    float: left;
+}
+.airport_mess .airport_phone:before{
+    content:'';
+    display: block;
+    clear: both;
+}
+
+.airport_mess .airport_phone > img {
+    width: 45%;
+    margin-top: 30px;
+}
+
+/*点击事件列表*/
+.airport_mess table{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+.airport_mess table thead,
+.airport_mess tbody tr{
+    display: table;
+    width: 100%;
+    padding: 3px 0px;
+    table-layout: fixed;
+    text-align:center;
+}
+
+
+.airport_mess thead{
+    width: 100%;
+    height: 50px;
+    background: #d2ecfa;
+}
+.airport_mess tbody{
+    overflow-y: auto;
+    display: block;
+    font-size: 14px;
+    height: calc(100% - 50px);
+}
+
+.airport_mess tbody>tr:nth-child(2n){
+    background:#f2f6f9;
+}
+
+
+/*滚动条*/
+
+::-webkit-scrollbar {
+    width: 6px;
+    /* height:px; */
+    /**/
+}
+
+::-webkit-scrollbar-track {
+    /* background: rgb(201, 201, 201); */
+    background: '';
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #bfbfbf;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f8f8f8;
+    color: #333233;
+    /* color: rgb(220, 243, 230) */
+    /* color: #333 */
+}
+
+::-webkit-scrollbar-corner {
+    background: #434b43;
+}
