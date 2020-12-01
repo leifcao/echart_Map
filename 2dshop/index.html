@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2dshop</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/echarts.min.js"></script>
+</head>
+
+<body>
+<div class="shopMap">
+<h1>商场服装柜台分布</h1>
+<div id="container" style=""></div>
+</div>
+
+
+<!--  可视化图标显示  -->
+<div class="shop_table">
+  <div id="shop_main">
+    <h1>楼层信息</h1>
+    <table class="floor_table">
+      <tbody>
+        <tr>
+          <td class="grayLight">楼层建筑面积</td>
+          <td>1802㎡</td>
+          <td class="grayLight">楼层柜台面积</td>
+          <td>1054㎡</td>
+        </tr>
+        <tr>
+          <td class="grayLight">楼层经营面积</td>
+          <td>1594㎡</td>
+          <td class="grayLight">楼层品牌总数</td>
+          <td>16</td>
+        </tr>
+      </tbody>
+    </table>
+    <h1 class="Martop">楼层服装所属业种情况</h1>
+    <table class="kinds_table">
+      <tbody>
+      <tr class="grayLight">
+        <td>编码</td>
+        <td>名称</td>
+        <td>品牌</td>
+        <td>面积</td>
+      </tr>
+      <tr>
+        <td class="grayLight">01010000</td>
+        <td>少女服饰</td>
+        <td>VERO NDDA,PRITCH</td>
+        <td>82㎡</td>
+      </tr>
+      <tr>
+        <td class="grayLight">01020000</td>
+        <td>少女服饰</td>
+        <td>VERO NDDA,PRITCH</td>
+        <td>82㎡</td>
+      </tr>
+      <tr>
+        <td class="grayLight">01030000</td>
+        <td>淑女服饰</td>
+        <td>MISSONI,KENZO,VERRI,LRGERFELD,ME.CITY,BALLY,CK</td>
+        <td>515㎡</td>
+      </tr>
+      <tr>
+        <td class="grayLight">01040000</td>
+        <td>内衣</td>
+        <td>LACOSTE</td>
+        <td>52㎡</td>
+      </tr>
+      <tr>
+        <td class="grayLight">01060000</td>
+        <td>男装</td>
+        <td>ALGENER</td>
+        <td>87㎡</td>
+      </tr>
+      <tr>
+        <td class="grayLight">01070000</td>
+        <td>童装</td>
+        <td>CANALI</td>
+        <td>62㎡</td>
+      </tr>
+
+      </tbody>
+    </table>
+
+    <h1 class="Martop">各经营方式查看</h1>
+    <table class="manage_table">
+      <tbody>
+      <tr>
+        <td class="grayLight">经销</td>
+        <td>VERO NDDA,MISSONI,VERRI,SELECTED</td>
+      </tr>
+      <tr>
+        <td class="grayLight">联销</td>
+        <td>CuCCI,LACOSTE,TOMMY,LRGERFELD,ME.CITY,ALGENER,BALLY,CK,PRITCH</td>
+      </tr>
+      <tr>
+        <td class="grayLight">代销</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="grayLight">代售</td>
+        <td>CuCCI,LACOSTE,TOMMY,LRGERFELD,ME.CITY,ALGENER,BALLY,CK,PRITCH</td>
+      </tr>
+      <tr>
+        <td class="grayLight">租赁</td>
+        <td>KENZO,MARLBORO,CANALI</td>
+      </tr>
+
+      </tbody>
+    </table>
+
+  </div>
+
+
+  <div id="shop_details">
+    <h1>柜台信息</h1>
+    <table style="height: calc(30% - 45px)">
+      <tbody class="shop_detail0 top">
+
+      </tbody>
+    </table>
+    <table class="Martop" style="height: 35%">
+      <thead>
+      <tr class="grayLight">
+        <td>项目</td>
+        <td>一季度</td>
+        <td>同期</td>
+        <td>扣拿</td>
+        <td>二季度</td>
+        <td>同期</td>
+        <td>扣拿</td>
+      </tr>
+      </thead>
+      <tbody class="shop_detail1">
+
+
+      </tbody>
+
+
+    </table>
+    <table style="height: 35%;">
+      <thead>
+      <tr class="grayLight">
+        <td>项目</td>
+        <td>三季度</td>
+        <td>同期</td>
+        <td>扣拿</td>
+        <td>四季度</td>
+        <td>同期</td>
+        <td>扣拿</td>
+      </tr>
+      </thead>
+      <tbody class="shop_detail2">
+
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script type="text/javascript" src="js/shopMap.js"></script>
+<script type="text/javascript" src="js/list.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
