@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: '微软雅黑';
+    background-color: #001326;
+}
+
+
+.map {
+    width: 45%;
+    height: 100%;
+    float: left;
+}
+
+
+h2 {
+    font-size: 16px;
+    text-indent: 10px;
+    color: white;
+    height: 38px;
+    line-height: 56px;
+    /*color: rgb(61, 77, 102);*/
+}
+
+h3 {
+    height: 30px;
+    line-height: 30px;
+    color: #5fa9d0 ;
+
+    text-align: center;
+}
+
+/* 地图显示区域样式 */
+#map-container {
+    width: 100%;
+    height: calc(100% - 86px);
+    margin-top: 30px    ;
+}
+
+.table_chart {
+    width: 54%;
+    height: 100%;
+    float: left;
+    /*background-color: #e4b9b9;*/
+}
+
+.table_cell {
+    height: 96%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.table_cell .table_left table {
+    width: 100%;
+    height: calc(100% - 30px);
+    table-layout: fixed;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.table_left, .table_right {
+    width: 49%;
+    height: 50%;
+
+}
+
+.table_right {
+    margin-left: 1%;
+}
+
+.table_cell .table_left .table_title {
+    background-color: rgb(20 50 73);
+    color: rgb(255, 255, 255);
+    font-family: '微软雅黑';
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.table_cell tr {
+    /*color: rgb(61, 77, 102);*/
+    color: rgb(255 255 255);
+    font-family: '微软雅黑';
+    /*background-color: white;*/
+}
+
+.table_cell tr td {
+    font-size: 9pt;
+}
+
+td.left{
+    text-align: right;
+}
+td.right{
+    text-align: left;
+}
+
+.table_cell tr:nth-child(2n+1) {
+    /*background-color: rgb(161 161 161 / 15%);*/
+    background-color: #a1a1a126;
+}
+
+.table_right img {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    max-height: 100%;
+}
+
+
+#barChart, #pieChart {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*background-color: rgb(255,255,255);
+    color: rgb(61,77,102);
+    font-family: '微软雅黑';*/
+
+/* 浏览器不兼容webGL 时的提示 */
+.noWebGL {
+    position: fixed;
+    font-family: 'Microsoft YaHei';
+    top: 50%;
+    color: rgba(212, 43, 43, 1);
+    margin-top: -60px;
+    padding-left: 40%;
+    background-color: rgba(178, 226, 240, 1);
+    width: 100%;
+    height: 120px;
+    font-weight: 100;
+}
+
+/* 适配手机浏览器样式 */
+@media screen and (min-width: 768px) {
+    .floor-theme {
+        top: 328px;
+    }
+
+    .floor-zoom {
+        top: 392px;
+    }
+
+    .viewmode-floor .btn,
+    .btn-floor-vertical .layer-list > label.btn {
+        height: 49px;
+        line-height: 31px;
+    }
+
+    .layer-list {
+        width: 51px;
+    }
+
+    #top,
+    #down {
+        height: 28px;
+        line-height: 14px;
+    }
+
+    #top > i {
+        font-size: 16px;
+    }
+
+    #down > i {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .btn {
+        padding: 5px 10px;
+        font-size: 12px;
+        line-height: 1.5;
+        border-radius: 3px;
+    }
+
+    .btn > i {
+        font-size: 18px;
+    }
+
+    .floor-theme {
+        top: 288px;
+    }
+
+    .floor-zoom {
+        top: 342px;
+    }
+
+    .viewmode-floor .btn,
+    .btn-floor-vertical .layer-list > label.btn {
+        height: 39px;
+        line-height: 29px;
+    }
+
+    .layer-list {
+        width: 40px;
+    }
+
+    #top,
+    #down {
+        height: 18px;
+        padding: 0;
+    }
+
+    #top > i {
+        font-size: 14px;
+    }
+
+    #down > i {
+        font-size: 14px;
+    }
+}
+
+
